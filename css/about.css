@@ -1,0 +1,133 @@
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+p {
+    color: #89bedc;
+}
+h3 {
+    color: #186792b6;
+}
+
+section {
+    padding: 30px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #13699c;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.reasons-to-shop ol {
+    padding-left: 20px;
+    color: #888;
+}
+
+.reasons-to-shop li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team > div > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 230px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px 0;
+}
+
+.team-member p {
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials blockquote {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #13699c;
+    background: #f9f9f9;
+}
+
+.testimonials footer {
+    text-align: right;
+    font-size: 1rem;
+    color: #888;
+    background: transparent;
+}
+
+/* Timeline Section */
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.timeline li {
+    margin-bottom: 30px;
+}
+
+.timeline h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.timeline p {
+    font-size: 1.1rem;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p,
+    .reasons-to-shop li {
+        font-size: 1rem;
+    }
+
+    .team > div > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p,
+    .reasons-to-shop li {
+        font-size: 0.9rem;
+    }
+}
