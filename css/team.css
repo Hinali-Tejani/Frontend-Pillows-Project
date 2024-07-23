@@ -1,0 +1,130 @@
+.container {
+    background: white;
+    border-radius: 20px;
+}
+
+p {
+    color: #89bedc;
+}
+
+h3 {
+    color: #13699c;
+}
+
+section {
+    padding: 30px 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 30%;
+}
+
+.team-member figure {
+    margin: 0;
+}
+
+.team-member img {
+    width: 230px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member figcaption {
+    font-size: 1.1rem;
+    color: #186792b6;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+}
+
+aside.additional-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 40px;
+    text-align: center;
+}
+aside.additional-info h2 {
+    font-size: 2.2rem;
+    text-shadow: 3px 1px 2px #c7ced2;
+    line-height: 2;
+    color: #388cbd;
+}
+aside.additional-info .value-para {
+    width: 42%;
+    margin: auto;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+    color: #388cbd;
+}
+
+aside.additional-info article h3 {
+    text-align: left;
+}
+aside.additional-info article p {
+    background: #f2fbff;
+    padding: 15px 20px;
+    box-shadow: 0px 0px 8px 2px #d1e5ef;
+    margin-top: 8px;
+}
+
+aside.additional-info article {
+    width: 60%;
+    margin: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    section p,
+    .team-member figcaption,
+    .team-member p {
+        font-size: 1rem;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+
+    aside.company-values p {
+        font-size: 1rem;
+    }
+
+    aside.additional-info .value-para{
+        width: 100%
+    }
+
+    aside.additional-info article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member figcaption,
+    .team-member p {
+        font-size: 0.9rem;
+    }
+
+    aside.additional-info article {
+        width: 100%;
+    }
+}

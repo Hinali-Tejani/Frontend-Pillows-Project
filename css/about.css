@@ -1,24 +1,17 @@
 .container {
     background: white;
-    padding: 20px;
     border-radius: 20px;
 }
 p {
     color: #89bedc;
 }
+
 h3 {
     color: #186792b6;
 }
 
 section {
     padding: 30px 20px;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: #13699c;
 }
 
 section p {
@@ -102,10 +95,6 @@ section p {
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
-    section h2 {
-        font-size: 1.8rem;
-    }
-
     section p,
     .reasons-to-shop li {
         font-size: 1rem;
@@ -122,10 +111,6 @@ section p {
 }
 
 @media only screen and (max-width: 480px) {
-    section h2 {
-        font-size: 1.5rem;
-    }
-
     section p,
     .reasons-to-shop li {
         font-size: 0.9rem;
