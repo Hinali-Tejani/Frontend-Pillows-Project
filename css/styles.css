@@ -113,20 +113,20 @@ nav ul li a:hover {
 .images {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 20px 16px;
+    gap: 24px;
 }
 
 .images img {
     height: 300px;
     object-fit: cover;
     width: 100%;
-    box-shadow: -5px 7px 7px 2px #b0b1ae;
+    box-shadow: 1px 1px 5px 2px #c9cac9;
     transition: 0.3s ease;
+    border-radius: 4px;
 }
 
 .images img:hover {
-    /* box-shadow: -10px 7px 10px 2px #a29e97; */
-    box-shadow: -6px 6px 10px 5px #b0b1ae;
+    box-shadow: -1px 3px 7px 2px #b0b1ae;
     cursor: pointer;
 }
 
@@ -305,6 +305,7 @@ footer a:hover {
 
     section h2 {
         font-size: 1.8rem;
+        margin-bottom: 30px;
     }
 
     section p {
@@ -323,6 +324,7 @@ footer a:hover {
 @media only screen and (max-width: 480px) {
     section h2 {
         font-size: 1.5rem;
+        margin-bottom: 20px;
     }
 
     .images {
