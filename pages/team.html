@@ -7,13 +7,18 @@
         <title>Pillow Lab - Team</title>
         <link rel="stylesheet" href="../css/styles.css" />
         <link rel="stylesheet" href="../css/team.css" />
+        <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     </head>
     <body>
         <header>
             <a href="index.html" class="logo"><img src="../img/logo.png" alt="Pillow Lab Logo" /></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
 
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -104,8 +109,8 @@
                     <article class="community-involvement">
                         <h3>Community Involvement</h3>
                         <p>
-                            At Pillow Lab, we believe in giving back to the community. We regularly donate pillows to local shelters and participate in initiatives that support better sleep health. Our team volunteers their time to
-                            various community projects, making a difference one act of kindness at a time.
+                            At Pillow Lab, we believe in giving back to the community. We regularly donate pillows to local shelters and participate in initiatives that support better sleep health. Our team volunteers their time to various
+                            community projects, making a difference one act of kindness at a time.
                         </p>
                     </article>
                 </div>
@@ -117,5 +122,16 @@
             <a href="mailto:info@pillowpalace.com">Request information</a><br />
             <p>Hinali Tejani - c0939251</p>
         </footer>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>

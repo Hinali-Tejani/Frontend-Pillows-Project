@@ -40,6 +40,10 @@ header img {
     max-height: 100%;
 }
 
+header .icon {
+    display: none;
+}
+
 /* styling for navigation */
 nav {
     padding: 15px;
@@ -296,6 +300,27 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    header .icon {
+        display: block;
+        color: #13699c;
+    }
+
+    .logo img {
+        height: 95px;
+    }
+
+    #navbar {
+        display: none;
+        transition: all 0.3s;
+    }
+
     nav ul {
         flex-direction: column;
     }

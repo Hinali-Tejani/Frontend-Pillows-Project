@@ -80,7 +80,7 @@ audio {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .media-item h3 {
         font-size: 1.5rem;
     }

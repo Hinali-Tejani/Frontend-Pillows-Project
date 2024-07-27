@@ -6,13 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pillow Lab - FAQs</title>
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/faqs.css" />
+        <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     </head>
     <body>
         <header>
             <a href="index.html" class="logo"><img src="../img/logo.png" alt="Pillow Lab Logo" /></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
 
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,10 +36,46 @@
         </div>
 
         <main>
-            <section class="welcome">
-                <h1></h1>
-                <p></p>
-                <!-- <img src="img/bedroom.jpg" alt="Comfortable Bedroom" /> -->
+            <section class="faq-section">
+                <div class="container">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <h3>What is Pillow Lab? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Pillow Lab is a premium retailer specializing in high-quality pillows designed for ultimate comfort and support.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What types of pillows do you offer? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>We offer a variety of pillows, including luxury, comfort, and eco-friendly options to suit different preferences and needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I contact customer support? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>You can contact our customer support team by visiting the <a href="contact.html">Contact Us</a> page and filling out the form.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer a guarantee on your products? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a 30-day satisfaction guarantee on all our products. If you're not happy with your purchase, you can return it for a full refund.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What is your shipping policy? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>We offer free shipping on all orders within the continental United States. International shipping rates vary based on location.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I track my order? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Once your order is shipped, we will send you a tracking number via email. You can use this number to track your order on our website.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -42,5 +84,39 @@
             <a href="mailto:info@pillowpalace.com">Request information</a><br />
             <p>Hinali Tejani - c0939251</p>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const faqItems = document.querySelectorAll(".faq-item");
+
+                faqItems.forEach((item) => {
+                    item.querySelector("h3").addEventListener("click", () => {
+                        const answer = item.querySelector(".faq-answer");
+                        const icon = item.querySelector("h3 i");
+
+                        if (answer.style.display === "block") {
+                            answer.style.display = "none";
+                            icon.classList.remove("fa-chevron-up");
+                            icon.classList.add("fa-chevron-down");
+                        } else {
+                            answer.style.display = "block";
+                            icon.classList.remove("fa-chevron-down");
+                            icon.classList.add("fa-chevron-up");
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
